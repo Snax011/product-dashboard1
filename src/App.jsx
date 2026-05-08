@@ -39,7 +39,12 @@ function App() {
 						<Switch
 							checked={showInStockOnly}
 							onChange={(event) => setShowInStockOnly(event.target.checked)}
-							slotProps={{ input: { 'aria-label': 'filter in-stock products' } }}
+							slotProps={{
+								input: {
+									'aria-label': 'filter in-stock products',
+									role: 'switch',
+								},
+							}}
 						/>
 					}
 					label="Show in-stock products only"
